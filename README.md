@@ -4,11 +4,15 @@ Generate and visualize a connected random graph of n nodes
 This Python script generates a connected random graph with a user-defined number of nodes. The nodes are labeled with letters starting from A. 
 
 Example:
-python graph_generator.py 5 
+python graph_generator.py 10
 
-This will generate a visualization of a random graph consisting of 5 nodes, labeled A, B, C, etc. 
+This will generate a visualization of a random graph consisting of 10 nodes, labeled A, B, C, etc. 
 
 The graph is visualized using the NetworkX and Matplotlib libraries.
+
+Here is an example of the output:
+
+![Sample Figure](./images/rg10nodes.png)
 
 ## Requirements
 
