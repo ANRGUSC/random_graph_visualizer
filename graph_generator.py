@@ -8,6 +8,16 @@ def generate_connected_graph(n):
         graph = nx.gnp_random_graph(n, 0.5)
         if nx.is_connected(graph):
             return graph
+        
+# Function to generate node labels A...Z, AA, ... AZ, BA, ... etc.         
+def generate_label(index):
+    label = ""
+    while index >= 0:
+        label = chr(ord('A') + (index % 26)) + label
+        index = index // 26 - 1
+    return label
+
+   
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
@@ -28,7 +38,7 @@ if __name__ == '__main__':
     graph = generate_connected_graph(num_nodes)
     
     # Relabel nodes from 0 to num_nodes-1 as A, B, C, etc.
-    mapping = {i: chr(ord('A') + i) for i in range(num_nodes)}
+    mapping = {i: generate_label(i) for i in range(num_nodes)}     
     graph = nx.relabel_nodes(graph, mapping)
 
     # Plot the graph
