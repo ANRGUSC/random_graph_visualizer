@@ -1,4 +1,4 @@
-# random_graph_visualizer
+# Random Connected Graph Visualizer
 Generate and visualize a connected random graph of n nodes
 
 This Python script generates a connected random graph with a user-defined number of nodes. The nodes are labeled with letters starting from A. 
