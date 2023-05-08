@@ -6,6 +6,7 @@ This Python script generates a connected random graph with a user-defined number
 Example to run: 
 ```bash
 python graph_generator.py 10
+```
 
 This will generate a visualization of a random graph consisting of 10 nodes, labeled A, B, C, etc. 
 
@@ -25,5 +26,6 @@ To install the required libraries, run the following command:
 
 ```bash
 pip install networkx matplotlib
+```
 
 
